@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2.4</title>
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- PHẦN A -->
+        <section class="a">
+            <h3>a,</h3>
+            <div class="p-3">
+                <h3>Phân trang</h3>
+                <p>Để tạo phân trang cơ bản, thêm class .pagination vào một số nhân tố ul. Sau đó, thêm .page-item
+                    <br>
+                    vào từng thẻ li và một class .page-link vào từng link bên trong li:
+                </p>
+            </div>
+
+            <nav class="p-3">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <!-- PHẦN B -->
+        <section class="b">
+            <h3>b,</h3>
+            <div class="p-3">
+                <h3>Kích thước khối phân trang</h3>
+                <p>Thêm .pagination-lg cho khối lớn hơn hoặc .pagination-sm cho khố nhỏ hơn sẽ được kết quả như sau:</p>
+            </div>
+
+            <p>Large:</p>
+            <nav>
+                <ul class="pagination pagination-lg">
+                    <li class="page-item">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <p>Default:</p>
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <p>Small:</p>
+            <nav>
+                <ul class="pagination pagination-sm">
+                    <li class="page-item">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <!-- PHẦN C -->
+        <section class="c">
+            <h3>c,</h3>
+            <div class="p-3">
+                <h3>Căn lề phân trang</h3>
+                <p>Dùng các class tiện ích để thay đổi lề phân trang:</p>
+            </div>
+
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a href="#" class="page-link">Previois</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul class="pagination justify-content-end">
+                    <li class="page-item">
+                        <a href="#" class="page-link">Previois</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </div>
+
+    <script src="../asset/js/script.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

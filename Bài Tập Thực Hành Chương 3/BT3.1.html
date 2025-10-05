@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3.1</title>
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- PHẦN A -->
+        <section class="mb-5">
+            <h1>a,</h1>
+            <h2>Định nghĩa các class buttons</h2>
+            <form action="">
+
+                <button class="btn">Default Button</button>
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-success">Success Button</button>
+                <button class="btn btn-info">Info Button</button>
+                <button class="btn btn-warning">Warning Button</button>
+                <button class="btn btn-danger">Danger Button</button>
+                <button class="btn btn-link">Link Button</button>
+            </form>
+        </section>
+
+        <!-- PHẦN B -->
+        <section class="mb-5">
+            <h1>b,</h1>
+            <h2>Button với đường viền</h2>
+
+            <form action="">
+                <button class="btn btn-outline-primary">Primary Button</button>
+                <button class="btn btn-outline-secondary">Secondary Button</button>
+                <button class="btn btn-outline-success">Success Button</button>
+                <button class="btn btn-outline-info">Info Button</button>
+                <button class="btn btn-outline-warning">Warning Button</button>
+                <button class="btn btn-outline-danger">Danger Button</button>
+                <button class="btn btn-outline-dark">Link Button</button>
+                <button class="btn btn-outline-light text-black">Link Button</button>
+            </form>
+
+        </section>
+
+        <!-- PHẦN C -->
+        <section class="mb-5">
+            <h1>c,</h1>
+            <h2>Kích thước của Button</h2>
+
+            <form action="">
+
+                <button class="btn btn-primary btn-lg">Nút to</button>
+                <button class="btn btn-primary">Kích thước mặc định</button>
+                <button class="btn btn-primary btn-sm">Nút nhỏ</button>
+            </form>
+        </section>
+
+        <!-- PHẦN D -->
+        <section class="mb-5">
+            <h1>d,</h1>
+            <h2>Thành phần của Button</h2>
+
+            <form action="">
+                <a href="#" class="btn btn-primary btn-lg">Button chứa link</a>
+                <button class="btn btn-primary btn-lg">Button</button>
+                <input type="button" name="" id="" class="btn btn-primary btn-lg" value="Input Button">
+                <button type="submit" class="btn btn-primary btn-lg">Submit Button</button>
+            </form>
+
+        </section>
+
+        <!-- PHẦN E -->
+        <section class="mb-5">
+            <h1>e,</h1>
+            <h2>Trạng thái của nút</h2>
+
+            <form action="">
+                <button class="btn btn-primary">Nút bình thường</button>
+                <button class="btn btn-primary active">Nút có thể click</button>
+                <button class="btn btn-primary" disabled>Nút không thể click</button>
+                <a href="#" class="btn btn-primary disabled">Link không thể click</a>
+            </form>
+        </section>
+
+        <!-- PHẦN F -->
+        <section class="f mb-5">
+            <h1>f,</h1>
+            <h2>Nút đang load</h2>
+            <p>Thêm trạng thái đang load cho nút:</p>
+
+            <form action="">
+                <button class="btn btn-primary btn-lg">
+                    <span class="spinner-border spinner-border-sm"></span>
+                </button>
+                <button class="btn btn-primary btn-lg">
+                    <span class="spinner-border spinner-border-sm"></span>
+                    <span>Loading...</span>
+                </button>
+                <button class="btn btn-primary btn-lg" disabled>
+                    <span class="spinner-border spinner-border-sm"></span>
+                    Loading...
+                </button>
+                <button class="btn btn-primary btn-lg" disabled>
+                    <span class="spinner-border-sm"></span>
+                    Loading...
+                </button>
+            </form>
+
+        </section>
+
+    </div>
+
+    <script src="../asset/js/script.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

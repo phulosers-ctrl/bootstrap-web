@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1.7</title>
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- PHẦN A -->
+        <section>
+            <h2>a, Tạo bảng theo ngữ cảnh</h2>
+
+            <div class="container py-4">
+                <div class="table-responsive">
+                    <table class="table table-striped align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="text-secondary" style="width:56px">#</th>
+                                <th>Bill</th>
+                                <th style="width:180px">Payment Date</th>
+                                <th style="width:220px">Payment Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-active">
+                                <td>1</td>
+                                <td>Credit Card</td>
+                                <td>04/07/2021</td>
+                                <td class="status">Waiting for statement</td>
+                            </tr>
+
+                            <tr class="table-danger">
+                                <td>2</td>
+                                <td>Insurance</td>
+                                <td>02/07/2021</td>
+                                <td class="status">Cancelled</td>
+                            </tr>
+
+                            <tr class="table-success">
+                                <td>3</td>
+                                <td>Water</td>
+                                <td>01/07/2021</td>
+                                <td class="status">Paid</td>
+                            </tr>
+
+                            <tr class="table-info">
+                                <td>4</td>
+                                <td>Internet</td>
+                                <td>05/07/2021</td>
+                                <td class="status">Change plan</td>
+                            </tr>
+
+                            <tr class="table-warning">
+                                <td>5</td>
+                                <td>Electricity</td>
+                                <td>03/07/2021</td>
+                                <td class="status">Pending</td>
+                            </tr>
+
+                            <tr class="table-secondary">
+                                <td>6</td>
+                                <td>Telephone</td>
+                                <td>06/07/2021</td>
+                                <td class="status">Due</td>
+                            </tr>
+
+                            <tr class="table-primary">
+                                <td>7</td>
+                                <td>Car Service</td>
+                                <td>08/07/2021</td>
+                                <td class="status">Call in to confirm</td>
+                            </tr>
+
+                            <tr class="table-dark text-white">
+                                <td>8</td>
+                                <td>Gas</td>
+                                <td>06/07/2021</td>
+                                <td class="status">Payment failed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PHẦN B -->
+        <section>
+            <h2>b, Thiết kế bảng hiển thị tốt trên mọi thiết bị và hỗ trợ cuộn ngang khi vượt quá chiều rộng màn hình.
+            </h2>
+            <div class="container py-4">
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th style="width:70px">STT</th>
+                                <th style="min-width:120px">Họ</th>
+                                <th style="min-width:120px">Tên</th>
+                                <th style="min-width:260px">Email</th>
+                                <th style="min-width:280px">Ghi chú</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nguyễn</td>
+                                <td>Mai Lan</td>
+                                <td>nguyen.lan@sinhvien.edu.vn</td>
+                                <td>Sinh viên năm 3 ngành CNTT</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Trần</td>
+                                <td>Công Minh</td>
+                                <td>tran.minh@sinhvien.edu.vn</td>
+                                <td>Thành viên CLB lập trình</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Phạm</td>
+                                <td>Thu Huyền</td>
+                                <td>pham.huyen@sinhvien.edu.vn</td>
+                                <td>Quan tâm đến Trí tuệ nhân tạo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p><b>Ghi chú:</b> Bảng sẽ hiển thị cuộn ngang nếu không đủ không gian hiển thị trên thiết bị.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="../asset/js/script.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

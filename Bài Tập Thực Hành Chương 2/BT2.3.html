@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2.3</title>
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<style>
+    img {
+        width: 10%;
+    }
+</style>
+
+<body>
+
+    <div class="container mt-5">
+        <span>Left alignment (This is default)</span>
+        <div class="border border-secondary">
+            <img src="../asset/images/user.png" alt="User" class="m-2">
+        </div>
+
+        <br>
+
+        <span>Center alignment using text alignment classes</span>
+        <div class="border border-secondary text-center">
+            <img src="../asset/images/user.png" alt="User" class="m-2">
+        </div>
+
+        <br>
+        <span>Right alignment using text alignment classes</span>
+        <div class="border border-secondary text-end">
+            <img src="../asset/images/user.png" alt="User" class="m-2">
+        </div>
+
+        <br>
+        <span>Horizontal alignment using float classes</span>
+        <div class="border border-secondary clearfix">
+            <img src="../asset/images/user.png" alt="User" class="m-2 float-start">
+            <img src="../asset/images/user.png" alt="User" class="m-2 float-end">
+        </div>
+
+        <br>
+        <span>Center alignment of block-level image using auto margin</span>
+        <div class="border border-secondary clearfix">
+            <img src="../asset/images/user.png" alt="User" class="m-2 mb-5 d-block mx-auto">
+        </div>
+
+    </div>
+
+    <script src="../asset/js/script.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

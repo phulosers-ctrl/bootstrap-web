@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3.5</title>
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- PHẦN A -->
+        <section class="mb-5">
+            <h2>a,</h2>
+            <h3>Xác thực biểu mẫu</h3>
+            <p>Ví dụ bạn gửi biểu mẫu chưa điền hết thông tin thì sẽ nhận được thông báo như bên dưới.</p>
+
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label class="form-label">Tên người dùng:</label>
+                    <input type="text" class="form-control" placeholder="Nhập tên người dùng" required>
+                    <div class="invalid-feedback">Vui lòng nhập tên người dùng.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Mật khẩu:</label>
+                    <input type="password" class="form-control" placeholder="Enter password" required>
+                    <div class="invalid-feedback">Vui lòng nhập mật khẩu.</div>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="check" required>
+                    <label for="check" class="form-check-label">Đồng ý</label>
+                    <div class="invalid-feedback">Bạn phải đồng ý trước khi gửi.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Gửi</button>
+            </form>
+        </section>
+
+
+        <!-- PHẦN B -->
+        <section>
+            <h2>b,</h2>
+            <h1>Registration Form</h1>
+            <hr>
+            <form>
+                <div class="row align-items-center mb-3">
+                    <div class="col-sm-2">
+                        <label for="FirstName" class="form-label">First Name:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" name="FirstName" id="" placeholder="First Name" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-3">
+                    <div class="col-sm-2">
+                        <label for="LastName" class="form-label">Last Name:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" name="LastName" id="" placeholder="Last Name" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-3">
+                    <div class="col-sm-2">
+                        <label for="email" class="form-label">Email:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="email" name="email" id="" placeholder="Email Address" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-3">
+                    <div class="col-sm-2">
+                        <label for="MobileNumber" class="form-label">Mobile Number:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" name="MobileNumber" id="" placeholder="Phone Number" class="form-control"
+                            pattern="[0-9]*" inputmode="numeric"
+                            onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-3">
+                    <div class="col-sm-2">
+                        <label for="DateofBirth" class="form-label">Date of Birth:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <select name="" id="" class="form-select">
+                                    <option value="Date">Date</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select name="" id="" class="form-select">
+                                    <option value="Month">Month</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <select name="" id="" class="form-select">
+                                    <option value="Year">Year</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-2">
+                        <label for="PostalAddress" class="form-label">Postal Address:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <textarea name="" id="" placeholder="Postal Address" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-3">
+                    <div class="col-sm-2">
+                        <label for="ZipCode" class="form-label">Zip Code:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" name="ZipCode" id="" placeholder="Zip Code" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-3">
+                    <div class="col-sm-2">
+                        <label for="UploadImage" class="form-label">Upload Image:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="file" name="UploadImage" id="" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-3">
+                    <div class="col-sm-2">
+                        <label for="Gender" class="form-label">Gender:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            &nbsp;&nbsp;&nbsp;<div class="col-sm-auto form-check">
+                                <input type="radio" name="sex" id="check1" class="form-check-input">
+                                <label class="form-check-label" for="check1">Male</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="radio" name="sex" id="check2" class="form-check-input">
+                                <label class="form-check-label" for="check2">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-3">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            &nbsp;&nbsp;&nbsp;<div class="col-sm-auto form-check">
+                                <input type="checkbox" name="" id="agree" class="form-check-input">
+                                <label class="form-check-label" for="agree">I agree to the <a href="#">Tems and
+                                        Conditions</a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-sm-auto">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                                <button class="btn btn-primary" type="reset">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+    </div>
+
+    <script src="../asset/js/TH3-BT3.5.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
